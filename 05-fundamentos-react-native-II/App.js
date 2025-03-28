@@ -7,35 +7,44 @@ import ListaComponente from "./componentes/ListaComponente";
 import Pessoa from "./componentes/Pessoa";
 
 export default function App() {
-  const lista = [
+
+
+  const listaJogadores = [
     {
       nome: "Neymar",
-      idade: "33",
-      imagem:
-        "https://cdn1.unitedinfocus.com/uploads/14/2023/05/GettyImages-1426663483-scaled.jpg",
+      idade: 33,
+      imagem: 'https://i.pinimg.com/236x/65/92/d2/6592d22f05d29398784337cd02a37e26.jpg'
     },
     {
-      nome: "Neymar",
-      idade: "33",
-      imagem:
-        "https://cdn1.unitedinfocus.com/uploads/14/2023/05/GettyImages-1426663483-scaled.jpg",
+      nome: "Cristiano Ronaldo",
+      idade: 40,
+      imagem: 'https://i.pinimg.com/474x/e2/07/cc/e207cc58c891798d5ff308b38ebc59cc.jpg'
     },
     {
-      nome: "Neymar",
-      idade: "33",
-      imagem:
-        "https://cdn1.unitedinfocus.com/uploads/14/2023/05/GettyImages-1426663483-scaled.jpg",
+      nome: "Messi",
+      idade: 40,
+      imagem: 'https://i.pinimg.com/474x/ab/3b/73/ab3b732b4401d1820418db53ef468cd0.jpg'
     },
-  ];
+    {
+      nome: "Messi",
+      idade: 40,
+      imagem: 'https://i.pinimg.com/474x/ab/3b/73/ab3b732b4401d1820418db53ef468cd0.jpg'
+    },
+    {
+      nome: "Messi",
+      idade: 40,
+      imagem: 'https://i.pinimg.com/474x/ab/3b/73/ab3b732b4401d1820418db53ef468cd0.jpg'
+    }
+  ]
+
+
+
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <Text>Open up App.js to start working on your app!</Text>
+    <ScrollView>
 
-      <PrimeiroComponente></PrimeiroComponente>
-      <JavaScriptComponente></JavaScriptComponente>
-
-      {/* <Perfil
+      <View style={styles.container}>
+        <StatusBar style="auto" />
+{/* <Perfil
         //  Aqui passo as propriedades do props que Criei lá em perfil, props.nome, props.email, props.idade, props.telefone
         nome="Anderson"
         email="email@email.com"
@@ -43,39 +52,29 @@ export default function App() {
         telefone="33763180"
       />
       */}
-
-      <ListaComponente />
-
-      <Pessoa
-        dados={{
-          nome: "Neymar",
-          idade: "33",
-          imagem:
-            "https://cdn1.unitedinfocus.com/uploads/14/2023/05/GettyImages-1426663483-scaled.jpg",
-        }}
-      />
-
-      {lista.map(
-        (jogador) => {
-          return(
-            <Pessoa
-            dados = {jogador}  
-            />
+        {
+          listaJogadores.map(
+            (jogador) => {
+              return (
+                <Pessoa 
+                  dados={jogador}
+                />
+              )
+            }
           )
         }
-      )}
 
 
-    </View>
+      </View>
+
+
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-    flex: 1,
+    backgroundColor: '#fff'
   },
 });
