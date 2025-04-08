@@ -68,7 +68,7 @@ export default function App(props) {
     <StatusBar style="auto" />
       <Text>App de clubes</Text>
       
-      {/* Meu FlatList para percorrer o array, é semelhante a um loop mal */}
+      {/* Meu FlatList para percorrer o array, é semelhante a um loop map */}
       
       <FlatList
 
