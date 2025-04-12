@@ -44,6 +44,7 @@ export default function JogadoresScreen(){
                 <Card>
 
                     <Title>{item.nome}</Title>
+                    <Card.Cover source={{uri: item.imagem}}/>
 
                 </Card>
             
