@@ -103,7 +103,7 @@ export default function HomeScreen(props) {
                             {/* Aqui virá um botão que direcionará para minha outra screen, primeiro devo criar ela e minhas rotas em route/StackRoute,
                              esta screen será responsável pelos detalhes */}
 
-                             <Button mode="contained" icon='arrow-left' onPress={() => navigation.navigate('DetalheScreen', { item } )}>Ver Detalhes</Button>
+                             <Button mode="contained" icon='arrow-right' onPress={() => navigation.navigate('DetalheScreen', { item } )}>Ver Detalhes</Button>
 
                         </Card.Actions>
 

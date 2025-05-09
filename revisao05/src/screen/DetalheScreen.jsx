@@ -1,6 +1,6 @@
 import React from "react";
 import { FlatList } from "react-native";
-import { Card, PaperProvider, Text } from "react-native-paper";
+import { Button, Card, PaperProvider, Text } from "react-native-paper";
 
 export default function DetalheScreen({ navigation, route }) {
 
@@ -40,12 +40,13 @@ export default function DetalheScreen({ navigation, route }) {
                     )}
                     />
 
-
-
-
-
-
                 </Card.Content>
+
+                <Card.Actions>
+                    {/* Botão para retornar para a minha HomeScreen */}
+                    
+                    <Button mode="contained" onPress={() => navigation.goBack()} icon='arrow-left'>Voltar</Button>
+                </Card.Actions>
             </Card>
 
         </PaperProvider>
