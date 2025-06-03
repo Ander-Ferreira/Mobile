@@ -11,7 +11,6 @@
 ###Pacotes usados:
 
 - [x] npm install react-native-paper 
-- [x] npm install react-native-vector-icons
 - [x] npx expo install expo-camera
 
 ### Cole este plugin em seu app.json dentro do Expo:
