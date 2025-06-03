@@ -4,6 +4,8 @@ import { Button } from 'react-native-paper';
 
 //Importação do expo camera - CameraView
 import { CameraView, useCameraPermissions } from 'expo-camera'
+
+//Hooks que irei usar
 import { useState, useRef } from 'react';
 
 export default function App() {
@@ -63,6 +65,7 @@ export default function App() {
   return (
     <View style={styles.container}>
 
+     {/* Botão com minha função para tornar o visível Modal com a câmera */}
       <Button mode="contained" onPress={handleOpenCamera}>
         Ler QR Code
       </Button>
@@ -98,6 +101,7 @@ export default function App() {
 
         <View style={styles.footer}>
 
+         {/* Só aparecerá quando meu modal estiver visível */}
           <Button mode="contained" onPress={() => setModalIsVisible(false)}>
             Cancelar
           </Button>
