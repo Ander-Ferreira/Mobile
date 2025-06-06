@@ -21,7 +21,7 @@ export default function HomeScreen({navigation, route}) {
  useEffect(() => {
   axios.get('https://dummyjson.com/products')
   .then(resposta => {
-    // console.log(resposta.data.products)
+    
     setProdutos(resposta.data.products)
   })
   .catch(erro => {
