@@ -15,13 +15,10 @@
 ###Pacotes usados:
 
 - [x] npm install @react-navigation/bottom-tabs
-- [x] npm install @react-navigation/native
 - [x] npm install @react-navigation/stack
 - [x] npm install axios
 - [x] npx expo install expo-print
 - [x] npx expo install expo-sharing
-- [x] npx expo install expo-status-bar
-- [x] npx expo install react
 - [x] npx expo install react-native
 - [x] npm install react-native-paper
 - [x] npm install react-native-vector-icons
