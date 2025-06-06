@@ -6,8 +6,11 @@ import { Button, Card, Text } from 'react-native-paper'
 
 
  //Para não fazer um array de produtos na mão
+ 
  //Vou pegar os produtos da API dummyjson, aqui não tem nada de especial galera
+ 
  //Só dar uma olhada na aula de navegação Stack do professor
+
 
    
 

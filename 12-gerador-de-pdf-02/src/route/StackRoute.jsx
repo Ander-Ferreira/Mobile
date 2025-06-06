@@ -1,9 +1,8 @@
-// src/routes/StackRoutes.jsx (ou ./StackRoutes.jsx se estiver na raiz)
-
 import { createStackNavigator } from "@react-navigation/stack"
 import HomeScreen from '../screens/HomeScreen';
 import GeradorScreen from '../screens/GeradorScreen';
 
+//Stack para navegarmos
 const Stack = createStackNavigator()
 
 export default function StackRoutes() {
