@@ -19,7 +19,6 @@
 - [x] npm install axios
 - [x] npx expo install expo-print
 - [x] npx expo install expo-sharing
-- [x] npx expo install react-native
 - [x] npm install react-native-paper
 - [x] npm install react-native-vector-icons
 
